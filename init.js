@@ -43,7 +43,7 @@ module.exports.init = function init() {
     res.sendFile(path.resolve(__dirname,'./public/index.html'));
   });
 
-  app.listen(config.app.port)
+  app.listen(3000)
     .on('error', error => {
       logger.error(error);
     })
