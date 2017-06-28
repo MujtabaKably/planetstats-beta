@@ -25,7 +25,7 @@ module.exports.init = function init() {
   app.use(cors());
   app.use(responseTime());
 
-  const config = require(path.join(__dirname, '/config/index.js'));
+  // const config = require(path.join(__dirname, '/config/index.js'));
   // const appRouter = require(path.join(__dirname, '/routes.js'));
   // const logger = config.logger.createLogger('init');
 
