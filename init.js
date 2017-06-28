@@ -27,7 +27,7 @@ module.exports.init = function init() {
 
   const config = require(path.join(__dirname, '/config/index.js'));
   // const appRouter = require(path.join(__dirname, '/routes.js'));
-  const logger = config.logger.createLogger('init');
+  // const logger = config.logger.createLogger('init');
 
   // Router mounting
   // app.use('/', appRouter);
@@ -45,10 +45,10 @@ module.exports.init = function init() {
 
   app.listen(3000)
     .on('error', error => {
-      logger.error(error);
+      // logger.error(error);
     })
     .on('listening', () => {
-      logger.info(`Express listening on ${config.app.port}`);
+      // logger.info(`Express listening on ${config.app.port}`);
     });
 
 };
