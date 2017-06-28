@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://planetstats.net/ -->
+<html style="background-image: url(&quot;css/ps2_3.jpg&quot;);">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>PlanetStats | Realtime Planetside 2 Statistics</title>
+	<!-- <script async="" src="/js/analytics.js"></script> -->
+	<script src="/js/jquery-1.11.0.min.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
+	<script src="/js/framework.js"></script>
+	<script src="/js/mobile.framework.js"></script>
+	<script src="/js/planetstats.js"></script>
+	<script src="/js/html2canvas.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./css/framework.css">
+	<link rel="stylesheet" type="text/css" href="./css/planetstats.css">
+
+	<link href="http://planetstats.net/css/favicon.ico" rel="SHORTCUT ICON">
+	<link rel="apple-touch-icon" href="http://planetstats.net/apple-touch-icon.png">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<meta content="utf-8" http-equiv="encoding">
+
+</head>
+<body cz-shortcut-listen="true">
+
+
+
+	<div class="wrapper">
+
+		<script>
+
+			$(document).ready(function(){
+
+
+
+				var tz = getCookie('tz');
+
+				if (tz == 'Europe/London'){$('#eu').css('color','#fff');$('#us').css('color','');$('#au').css('color','');}
+				if (tz == 'America/Denver'){$('#eu').css('color','');$('#us').css('color','#fff');$('#au').css('color','');}
+				if (tz == 'Asia/Singapore'){$('#eu').css('color','');$('#us').css('color','');$('#au').css('color','#fff');}
+			});
+
+		</script>
+		<div class="over-header text-left bg-black">PlanetStats.net | <a href="http://planetstats.net/" class="link">Characters</a> | <a href="http://planetstats.net/weapons" class="link">Weapons</a> | <a href="http://planetstats.net/data/weapons" class="link">Weapon Data</a><a href="http://www.reddit.com/r/Planetside/comments/28b8j4/welcome_to_your_new_stat_trackercomparerwebapp/" class="link float-right">[?]</a></div>
+		<div class="header">
+
+			<h1>PlanetStats.net</h1>
+			<p>Track, compare and watch real time stats for the best MMOFPS on the planet</p>
+		</div>
+
+			<div class="content stat-card" id="loginwrap"><span class="link">Set Timezone | </span>
+
+				<a href="javascript:void(0)" onclick="setTz(&quot;Europe/London&quot;);" class="link white" id="eu">Europe</a>
+				<a href="javascript:void(0)" onclick="setTz(&quot;America/Denver&quot;);" class="link white" id="us">USA</a>
+				<a href="javascript:void(0)" onclick="setTz(&quot;Asia/Singapore&quot;);" class="link white" id="au">Australia</a>
+				<a href="http://www.reddit.com/r/Planetside/comments/28b8j4/welcome_to_your_new_stat_trackercomparerwebapp/" class="link float-right" target="reddit">[?]</a>
+
+				<form id="loginform">
+					<input type="text" placeholder="Enter character names here. Multiple characters can be listed separated by a comma" id="login">
+				</form>
+
+			</div>
+		</div>
+
+	
+
+
+
+
+
+</body></html>
