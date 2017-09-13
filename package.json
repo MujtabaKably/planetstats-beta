@@ -13,7 +13,7 @@
     "Skeleton",
     "ES6"
   ],
-  "engines":{
+  "engines": {
     "node": "7.0.0",
     "npm": "4.0.3"
   },
